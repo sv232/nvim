@@ -113,7 +113,11 @@ set si "Smart indent
 set wrap "Wrap lines
 set listchars=tab:\|\
 set list
-:set dictionary+=/usr/share/dict/words
+set dictionary+=/usr/share/dict/words
+nnoremap <leader>ct :checktime<CR>
+" check one time after 4s of inactivity in normal mode
+" set autoread
+" au CursorHold * checktime 
 
 
 set foldenable
@@ -173,7 +177,7 @@ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_server_python_interpreter = '/usr/bin/python3' " change this according to the YcmRestartSerever Error
+let g:ycm_server_python_interpreter = '/usr/bin/python3.6' " change this according to the YcmRestartSerever Error
 let g:ycm_python_binary_path = 'python3.6'
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_min_num_of_chars_for_completion = 2
